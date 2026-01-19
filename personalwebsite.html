@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaviLeeNavi</title>
+</head>
+<style>
+*{
+  text-decoration: none;
+  font-family: "Times New Roman", "宋体";
+  font-weight: bold;}
+
+body
+{
+  margin:0;
+  background-color: #9d9d9d;
+}
+h1{
+  font-size: 59px;
+}
+.header{
+  background-color: #1b67f4;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.header h1{
+  transition: transform 0.2s ease-in-out;
+}
+.header h1:hover{
+  transform: scale(1.04);
+}
+
+/* 新增个人信息容器样式 */
+.personal-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #1b67f4;
+  margin: 0px 0 10px 0;
+}
+.personal-school{
+  text-align: center;
+  color: #ffffff ;
+  font-size: 21px;
+}
+
+
+
+.personal-info div {
+  text-align: center;
+  color: #ffffff ;
+  font-size: 25px;
+  /* 变大效果 */
+  transition: transform 0.2s ease-in-out;
+}
+.personal-info div:hover {
+  transform: scale(1.04);
+}
+.personal-info div a{
+  color: #ffffff;
+}
+p{
+  font-size: 28px;
+  text-indent: 2em;
+}
+h2{
+  font-size: 32px;
+}
+
+
+.innerbox {
+  margin: 0px auto;
+  max-width: 1200px;
+  
+  ;
+
+}
+.innerboxmiddle{
+  text-align: center;
+  
+}
+.innerbox img{
+  display: block;
+  margin: 0 auto;
+}
+</style>
+<body>
+    <div class="header">
+        <h1>This is Navi Lee.</h1>
+    
+    
+    <!-- 将个人信息移到header外部 -->
+    <div class="personal-info">
+        <div class="github"><a href="https://github.com/Navileecoding">Github:Navileecoding</a></div>
+        <div class="xiaohongshu">小红书:Navi_coding</div>
+        <div class="email"><a href="mailto:LeeNavi@foxmail.com">Email:LeeNavi@foxmail.com</a></div>
+    </div>
+    <div class="personal-school">太原理工大学|软件工程|2029届</div>
+    </div>
+    
+    <div class="innerbox">
+        <div class="innerboxmiddle">
+          <h2>About Me</h2>
+        </div>
+      <p>我是Navi Lee，这是一个个人网站，用于展示项目之类的内容。当然目前还没有任何可供展示的。
+        目前已经学了css，但还没有学javascript。先做个网站的原型吧。
+        </p>
+        <p>
+          无知不可怕，可怕的是不去探索，不去学习。虽然我现在就挺无知的。（请自己脑补一个微信里的笑哭表情，因为很多浏览器里面的笑哭表情不长那样）
+        </p>
+        <p>
+          我会尽量把这个so-called网站更新，加上更多学到的功能，也会尝试做一些有趣的项目。当然，当务之急是先把它部署到一个差不多点的域名上去。
+        </p>
+        <p>
+          放个图片占位置吧。
+        </p>
+        <img src="./touxiang.png" alt="Navi Lee" width="500" height="500">
+        <p>写于2026/1/19</p>
+    </div>
+</body>
+</html>
