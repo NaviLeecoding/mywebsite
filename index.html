@@ -10,11 +10,17 @@
   text-decoration: none;
   font-family: "Times New Roman", "宋体";
   font-weight: bold;}
-
+hr
+{
+  border: 0px;
+  height: 5px;
+  width: 100%;
+  background-color: #000000;
+}
 body
 {
   margin:0;
-  background-color: #d0ddcb;
+  background-color: #ffffff;
 }
 h1{
   font-size: 59px;
@@ -75,16 +81,25 @@ h2{
 
 .innerbox {
   margin: 0px auto;
-  max-width: 1200px;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* 加一个左右的border */
+  border-left: 5px solid #1b67f4;
+  border-right: 5px solid #1b67f4;
+  padding: 20px;
+
   
-  ;
+  
 
 }
-.innerboxmiddle{
-  text-align: center;
+.innerbox1{
+  
   
 }
-.innerbox img{
+.innerbox1 img{
   display: block;
   margin: 0 auto;
 }
@@ -104,10 +119,10 @@ h2{
     </div>
     
     <div class="innerbox">
-        <div class="innerboxmiddle">
+        <div class="innerbox1">
           <h2>About Me</h2>
         </div>
-      <p>我是Navi Lee，这是一个个人网站，用于展示项目之类的内容。当然目前还没有任何可供展示的。
+      <div class="innerbox1"><p>我是Navi Lee，这是一个个人网站，用于展示项目之类的内容。当然目前还没有任何可供展示的。
         目前已经学了css，但还没有学javascript。先做个网站的原型吧。
         </p>
         <p>
@@ -121,6 +136,16 @@ h2{
         </p>
         <img src="./touxiang.png" alt="Navi Lee" width="500" height="500">
         <p>写于2026/1/19</p>
+    </div>
+    <hr>
+    <div class="innerbox1">
+        
+      <h2>更新日志</h2>
+      </div>
+      <div class="innerbox1">
+        <p>2026/1/21 购买navilee.com域名，审核中。目前可从navilee.vercel.app访问。
+        为什么css样式这么难调这谁开发的这玩意图形化一点不好吗</p>
+      </div>
     </div>
 </body>
 </html>
